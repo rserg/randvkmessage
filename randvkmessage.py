@@ -108,14 +108,6 @@ class RandomVKMessage(object):
 
 
 
-#Check valid email. If email not valid go out
-#def valid_email(email):
-    #return re.compile(r"^[\S]+@[\S]+\.[\S]+$").match(email)
-
-#http://docs.python.org/library/argparse.html#module-argparse
-#http://www.alexonlinux.com/pythons-optparse-for-human-beings
-
-
 def main_parse():
 	arg = sys.argv;
 	parser = argparse.ArgumentParser()
