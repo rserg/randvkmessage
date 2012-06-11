@@ -10,7 +10,10 @@ import random
 from time import sleep
 import argparse
 import time
-import json
+try:
+	import simplejson as json
+except:
+	import json
 
 __version__ = 0.1
 #CTRL+G -- go to line
@@ -133,16 +136,11 @@ def main_parse():
 	if results.version:
 		print results.version
 	elif len(arg) > 1:
-		pass
-		#app.run()
-		'''message = RandomVKMessage(login=results.log[0], password=results.log[0], 
+		message = RandomVKMessage(login=results.log[0], password=results.log[0], 
 		decode=results.decode,wait=results.timeout, count=int(results.count))
-		message.start(form)'''
+		message.start(form)
 	else:
 		print parser.print_help()
 
 if __name__ == '__main__':
 	main_parse()
-
-
-
